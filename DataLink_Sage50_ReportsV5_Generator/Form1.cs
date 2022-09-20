@@ -22,18 +22,14 @@ namespace DataLink_Sage50_ReportsV5_Generator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                textBox1.Text = $"{Path.GetDirectoryName(openFileDialog1.FileName)}/{openFileDialog1.FileName}";
-            }
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)            
+                textBox1.Text = $"{Path.GetDirectoryName(openFileDialog1.FileName)}/{openFileDialog1.FileName}";            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
-            {
-                textBox2.Text = folderBrowserDialog1.SelectedPath;
-            }
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)            
+                textBox2.Text = folderBrowserDialog1.SelectedPath;            
         }
 
         private void button3_Click(object sender, EventArgs e)
