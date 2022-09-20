@@ -23,7 +23,7 @@ namespace DataLink_Sage50_ReportsV5_Generator
         private void button1_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)            
-                textBox1.Text = $"{Path.GetDirectoryName(openFileDialog1.FileName)}/{openFileDialog1.FileName}";            
+                textBox1.Text = openFileDialog1.FileName;            
         }
 
         private void button2_Click(object sender, EventArgs e)
